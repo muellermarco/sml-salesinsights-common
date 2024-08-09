@@ -132,6 +132,14 @@ hierarchies:
               - quarter_of_year
             name_column: quarter_of_year
             sort_column: quarter_of_year
+          - unique_name: year
+            label: Year
+            contains_unique_names: false
+            dataset: datecustom
+            is_unique_key: false
+            key_columns:
+              - year
+            name_column: year_name
       - unique_name: Month1
         secondary_attributes:
           - unique_name: d_month_of_year
@@ -224,7 +232,6 @@ hierarchies:
             name_column: week_of_year
             sort_column: week_of_year
       - unique_name: DayMonth
-
   - unique_name: Retail445
     label: Retail445
     description: A Retail 4-4-5 calendar
@@ -393,14 +400,6 @@ level_attributes:
     name_column: month_name
     sort_column: month
     time_unit: month
-  - unique_name: Quarter
-    label: Quarter
-    dataset: datecustom
-    key_columns:
-      - quarter
-    name_column: quarter_name
-    sort_column: quarter
-    time_unit: quarter
   - unique_name: rpt_Day
     label: rpt Day
     description: A Retail 4-4-5 calendar
@@ -477,4 +476,12 @@ level_attributes:
     name_column: year_name
     sort_column: year
     time_unit: year
+  - unique_name: Quarter
+    label: Quarter
+    dataset: datecustom
+    key_columns:
+      - quarter
+    name_column: quarter_name
+    sort_column: quarter
+    time_unit: quarter
 type: time
