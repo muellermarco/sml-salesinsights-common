@@ -1,0 +1,10 @@
+unique_name: Security Dim Country by User
+object_type: row_security
+label: Security Dim Country by User
+dataset: SECURITY_COUNTRY_USER
+filter_key_column: country
+id_type: user
+ids_column: USER_ID
+scope: all
+secure_totals: false
+use_filter_key: false
