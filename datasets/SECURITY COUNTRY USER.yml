@@ -6,5 +6,5 @@ columns:
     data_type: string
   - name: USER_ID
     data_type: string
-connection_id: common_connection
+connection_id: security_connection
 table: SECURITY_COUNTRY_USER
