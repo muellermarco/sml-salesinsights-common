@@ -1,7 +1,7 @@
 unique_name: dim_geo_state
 label: dim_geo_state
 object_type: dataset
-connection_id: Databricks
+connection_id: common_connection
 table: dim_geo_state
 project_properties:
   allow_aggregates: true
