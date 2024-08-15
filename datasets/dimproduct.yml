@@ -2,7 +2,7 @@ unique_name: dimproduct
 label: dimproduct
 object_type: dataset
 connection_id: common_connection
-table: dimproduct
+table: DIMPRODUCT
 project_properties:
   allow_aggregates: true
   aggregate_locality: managed

@@ -2,7 +2,7 @@ unique_name: dim_geo_country
 object_type: dataset
 label: dim_geo_country
 connection_id: common_connection
-table: dim_geo_country
+table: DIM_GEO_COUNTRY
 project_properties:
   allow_aggregates: true
   aggregate_locality: managed

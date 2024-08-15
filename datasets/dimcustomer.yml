@@ -2,7 +2,7 @@ unique_name: dimcustomer
 label: dimcustomer
 object_type: dataset
 connection_id: common_connection
-table: dimcustomer
+table: DIMCUSTOMER
 project_properties:
   allow_aggregates: true
   aggregate_locality: managed

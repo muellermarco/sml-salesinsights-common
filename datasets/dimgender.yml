@@ -2,7 +2,7 @@ unique_name: dimgender
 label: dimgender
 object_type: dataset
 connection_id: common_connection
-table: dimgender
+table: DIMGENDER
 project_properties:
   allow_aggregates: true
 

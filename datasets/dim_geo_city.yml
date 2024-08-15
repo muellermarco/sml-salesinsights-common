@@ -2,7 +2,7 @@ unique_name: dim_geo_city
 object_type: dataset
 label: dim_geo_city
 connection_id: common_connection
-table: dim_geo_city
+table: DIM_GEO_CITY
 project_properties:
   allow_aggregates: true
   aggregate_locality: managed
