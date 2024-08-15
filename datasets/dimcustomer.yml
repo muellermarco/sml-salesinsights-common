@@ -1,7 +1,7 @@
 unique_name: dimcustomer
 label: dimcustomer
 object_type: dataset
-connection_id: Databricks
+connection_id: common_connection
 table: dimcustomer
 project_properties:
   allow_aggregates: true
