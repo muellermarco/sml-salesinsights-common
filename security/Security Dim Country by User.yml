@@ -1,10 +1,10 @@
 unique_name: Security Dim Country by User
 object_type: row_security
 label: Security Dim Country by User
-dataset: SECURITY_COUNTRY_USER
+dataset: security_country_user
 filter_key_column: country
 id_type: user
-ids_column: username
+ids_column: user_id
 scope: all
 secure_totals: false
 use_filter_key: false
