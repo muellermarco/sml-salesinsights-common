@@ -1,0 +1,9 @@
+unique_name: common_connection
+object_type: connection
+as_connection: databricks
+label: Databricks
+db_type: databricks
+database: hive_metastore
+schema: as_adventure
+override: true
+

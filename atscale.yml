@@ -1,0 +1,6 @@
+unique_name: Sales Insights Common
+object_type: catalog
+label: Sales Insights Common
+aggressive_agg_promotion: false
+as_version: 1
+build_speculative_aggs: true

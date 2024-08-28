@@ -1,8 +1,9 @@
 unique_name: security_connection
 object_type: connection
-as_connection: snowflake
-label: Snowflake
-db_type: snowflake
-database: SE_DEMO_LIBRARY
-schema: MM_TABLES
+as_connection: databricks
+label: security_connection
+db_type: databricks
+database: mm_sample
+schema: sales_insight
 override: true
+

@@ -4,7 +4,7 @@ label: SECURITY_COUNTRY_USER
 columns:
   - name: country
     data_type: string
-  - name: USER_ID
+  - name: username
     data_type: string
 connection_id: security_connection
-table: SECURITY_COUNTRY_USER
+table: security_geo_country_user
