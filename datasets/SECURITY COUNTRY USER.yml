@@ -2,7 +2,7 @@ unique_name: security_country_user
 object_type: dataset
 label: security_country_user
 columns:
-  - name: country
+  - name: country_id
     data_type: string
   - name: user_id
     data_type: string
