@@ -4,7 +4,7 @@ label: Security Dim Country by User
 dataset: SECURITY_COUNTRY_USER
 filter_key_column: country
 id_type: user
-ids_column: USER_ID
+ids_column: username
 scope: all
 secure_totals: false
 use_filter_key: false
