@@ -2,7 +2,7 @@ unique_name: dim_geo_postalcode
 label: dim_geo_postalcode
 object_type: dataset
 connection_id: common_connection
-table: DIM_GEO_POSTALCODE
+table: dim_geo_postalcode
 project_properties:
   allow_aggregates: true
   aggregate_locality: managed
