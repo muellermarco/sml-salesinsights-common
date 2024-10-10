@@ -3,6 +3,6 @@ object_type: connection
 as_connection: gbq
 label: security_connection
 db_type: gbq
-database: SE_DEMO_LIBRARY
-schema: MM_TABLES
+database: atscale-sales-demo
+schema: mm_dataset
 override: true
