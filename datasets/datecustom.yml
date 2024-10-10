@@ -201,4 +201,4 @@ columns:
   - name: rpt_year_lykey
     data_type: datetime
 connection_id: common_connection
-table: DATECUSTOM
+table: datecustom
