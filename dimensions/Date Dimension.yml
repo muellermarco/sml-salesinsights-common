@@ -232,6 +232,16 @@ hierarchies:
             name_column: week_of_year
             sort_column: week_of_year
       - unique_name: DayMonth
+        secondary_attributes:
+          - unique_name: weekday
+            label: Weekday
+            contains_unique_names: false
+            dataset: datecustom
+            is_unique_key: false
+            key_columns:
+              - day_of_week
+            name_column: day_of_week
+            sort_column: day_of_month
   - unique_name: Retail445
     label: Retail445
     description: A Retail 4-4-5 calendar
@@ -476,12 +486,4 @@ level_attributes:
     name_column: year_name
     sort_column: year
     time_unit: year
-  - unique_name: Quarter
-    label: Quarter
-    dataset: datecustom
-    key_columns:
-      - quarter
-    name_column: quarter_name
-    sort_column: quarter
-    time_unit: quarter
 type: time
