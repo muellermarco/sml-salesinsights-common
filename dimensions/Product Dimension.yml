@@ -24,7 +24,7 @@ hierarchies:
               - productsubcategorykey
       - unique_name: Product Name
 
-        metrics:
+        metrics_commented:
           - unique_name: List Price
             label: List Price
             calculation_method: sum
