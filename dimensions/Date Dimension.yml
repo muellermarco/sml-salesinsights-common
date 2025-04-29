@@ -280,7 +280,7 @@ hierarchies:
     filter_empty: 'yes'
     folder: Date Attributes
     levels:
-      - unique_name: reporting_Year
+      - unique_name: rpt_Year
       - unique_name: reporting_Half_Year
         secondary_attributes:
           - unique_name: Reporting_Half_Year_Of_Year
@@ -497,7 +497,7 @@ level_attributes:
     name_column: reporting_week_name
     sort_column: reporting_week
     time_unit: week
-  - unique_name: reporting_Year
+  - unique_name: rpt_Year
     label: ReportIng Year
     dataset: datecustom
     key_columns:
