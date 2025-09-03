@@ -43,6 +43,7 @@ level_attributes:
     name_column: citystatekey
   - unique_name: CountryCity
     label: Country
+    contains_unique_names: true
     dataset: dim_geo_country
     is_unique_key: true
     key_columns:
