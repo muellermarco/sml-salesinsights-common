@@ -1,0 +1,10 @@
+unique_name: security_country_group
+object_type: dataset
+label: security_country_group
+columns:
+  - name: countrykey
+    data_type: string
+  - name: groupid
+    data_type: string
+connection_id: security_connection
+table: security_country_group
