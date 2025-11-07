@@ -381,6 +381,15 @@ level_attributes:
       default ParallelPeriod logic.  A real custom ParallelPeriod hierarchy
       would have different parallel period key assignments to satisfy the
       reporting business's reporting comparison requirements.
+    allowed_calcs_for_dma:
+      - Lag
+      - ParallelPeriod
+      - Ancestor
+      - Descendants
+      - Siblings
+      - PeriodsToDate
+      - DatesPeriodsToDate
+      - Range
     dataset: datecustom
     is_unique_key: true
     key_columns:
@@ -393,6 +402,15 @@ level_attributes:
     description: >-
       Same as [Retail445].[Reporting Month] but has a custom parallel period
       key.
+    allowed_calcs_for_dma:
+      - Lag
+      - ParallelPeriod
+      - Ancestor
+      - Descendants
+      - Siblings
+      - PeriodsToDate
+      - DatesPeriodsToDate
+      - Range
     dataset: datecustom
     key_columns:
       - rpt_month
@@ -404,6 +422,15 @@ level_attributes:
     description: >-
       Same as [Retail445].[Reporting Quarter] but has a custom parallel period
       key.
+    allowed_calcs_for_dma:
+      - Lag
+      - ParallelPeriod
+      - Ancestor
+      - Descendants
+      - Siblings
+      - PeriodsToDate
+      - DatesPeriodsToDate
+      - Range
     dataset: datecustom
     key_columns:
       - rpt_quarter
@@ -413,6 +440,15 @@ level_attributes:
   - unique_name: customweek
     label: Custom Week
     description: Same as [Retail445].[Reporting Week] but has a custom parallel period key.
+    allowed_calcs_for_dma:
+      - Lag
+      - ParallelPeriod
+      - Ancestor
+      - Descendants
+      - Siblings
+      - PeriodsToDate
+      - DatesPeriodsToDate
+      - Range
     dataset: datecustom
     key_columns:
       - rpt_week
@@ -422,6 +458,15 @@ level_attributes:
   - unique_name: customyear
     label: Custom Year
     description: Same as [Retail445].[Reporting Year] but has a custom parallel period key.
+    allowed_calcs_for_dma:
+      - Lag
+      - ParallelPeriod
+      - Ancestor
+      - Descendants
+      - Siblings
+      - PeriodsToDate
+      - DatesPeriodsToDate
+      - Range
     dataset: datecustom
     key_columns:
       - rpt_year
