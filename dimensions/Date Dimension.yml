@@ -359,6 +359,15 @@ level_attributes:
   - unique_name: custommonth
     label: Custom Month
     description: Same as [Retail445].[rpt Month] but has a custom parallel period key.
+    allowed_calcs_for_dma:
+      - Lag
+      - ParallelPeriod
+      - Ancestor
+      - Descendants
+      - Siblings
+      - PeriodsToDate
+      - DatesPeriodsToDate
+      - Range
     dataset: datecustom
     key_columns:
       - rpt_month
@@ -368,6 +377,15 @@ level_attributes:
   - unique_name: customquarter
     label: Custom Quarter
     description: Same as [Retail445].[rpt Quarter] but has a custom parallel period key.
+    allowed_calcs_for_dma:
+      - Lag
+      - ParallelPeriod
+      - Ancestor
+      - Descendants
+      - Siblings
+      - PeriodsToDate
+      - DatesPeriodsToDate
+      - Range
     dataset: datecustom
     key_columns:
       - rpt_quarter
@@ -386,6 +404,15 @@ level_attributes:
   - unique_name: customyear
     label: Custom Year
     description: Same as [Retail445].[rpt Year] but has a custom parallel period key.
+    allowed_calcs_for_dma:
+      - Lag
+      - ParallelPeriod
+      - Ancestor
+      - Descendants
+      - Siblings
+      - PeriodsToDate
+      - DatesPeriodsToDate
+      - Range
     dataset: datecustom
     key_columns:
       - rpt_year
