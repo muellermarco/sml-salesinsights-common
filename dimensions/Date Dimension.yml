@@ -349,6 +349,15 @@ level_attributes:
       default ParallelPeriod logic.  A real custom ParallelPeriod hierarchy
       would have different parallel period key assignments to satisfy the rpt
       business's rpt comparison requirements.
+    allowed_calcs_for_dma:
+      - Lag
+      - ParallelPeriod
+      - Ancestor
+      - Descendants
+      - Siblings
+      - PeriodsToDate
+      - DatesPeriodsToDate
+      - Range
     dataset: datecustom
     is_unique_key: true
     key_columns:
@@ -395,6 +404,15 @@ level_attributes:
   - unique_name: customweek
     label: Custom Week
     description: Same as [Retail445].[rpt Week] but has a custom parallel period key.
+    allowed_calcs_for_dma:
+      - Lag
+      - ParallelPeriod
+      - Ancestor
+      - Descendants
+      - Siblings
+      - PeriodsToDate
+      - DatesPeriodsToDate
+      - Range
     dataset: datecustom
     key_columns:
       - rpt_week
