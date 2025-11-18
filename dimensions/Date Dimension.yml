@@ -404,6 +404,7 @@ level_attributes:
     description: >-
       Same as [Retail445].[Reporting Quarter] but has a custom parallel period
       key.
+    constraint_translation_rank: 1
     dataset: datecustom
     key_columns:
       - rpt_quarter
