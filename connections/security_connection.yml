@@ -1,6 +1,6 @@
 unique_name: security_connection
 object_type: connection
-as_connection: databricks
+as_connection: Databricks
 label: security_connection
 db_type: databricks
 database: mm_sample
