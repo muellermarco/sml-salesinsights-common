@@ -110,14 +110,4 @@ relationships:
       dimension: Geography Dimension
       level: CountryCity
     type: snowflake
-  - unique_name: dim_geo_country_country_to_Security Dim Country by group
-    from:
-      dataset: dim_geo_country
-      hierarchy: Geography City
-      join_columns:
-        - country
-      level: CountryCity
-    to:
-      row_security: Security Dim Country by group
-    type: embedded
 type: standard
