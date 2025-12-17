@@ -3,7 +3,7 @@ object_type: dimension
 label: Product Dimension
 description: Product Line, Category, and Name
 hierarchies:
-  - unique_name: Product Dimension hierarchy
+  - unique_name: Product Hierarchy
     label: Product Hierarchy
     folder: Product Attributes
     levels:
@@ -14,7 +14,6 @@ hierarchies:
             label: Product Subcategory ID
             description: ID of the product category
             dataset: dimproduct
-            is_hidden: false
             key_columns:
               - productsubcategorykey
             name_column: productsubcategorykey
@@ -62,3 +61,4 @@ relationships:
     to:
       row_security: Security Productline Group
     type: embedded
+type: standard
