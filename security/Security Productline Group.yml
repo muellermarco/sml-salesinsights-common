@@ -1,0 +1,10 @@
+unique_name: Security Productline Group
+object_type: row_security
+label: Security Productline Group
+dataset: sales_insights_security_productline_group
+filter_key_column: productline_id
+id_type: group
+ids_column: group_id
+scope: all
+secure_totals: false
+use_filter_key: false
