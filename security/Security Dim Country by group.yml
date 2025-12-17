@@ -2,9 +2,9 @@ unique_name: Security Dim Country by group
 object_type: row_security
 label: Security Dim Country by group
 dataset: security_country_group
-filter_key_column: countrykey
+filter_key_column: country_id
 id_type: group
-ids_column: groupid
+ids_column: group_id
 scope: all
 secure_totals: false
 use_filter_key: false

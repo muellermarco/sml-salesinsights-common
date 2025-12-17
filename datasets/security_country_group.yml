@@ -2,9 +2,9 @@ unique_name: security_country_group
 object_type: dataset
 label: security_country_group
 columns:
-  - name: countrykey
+  - name: country_id
     data_type: string
-  - name: groupid
+  - name: group_id
     data_type: string
 connection_id: security_connection
-table: security_country_group
+table: sales_insights_security_country_group

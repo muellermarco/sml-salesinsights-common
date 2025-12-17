@@ -3,7 +3,7 @@ object_type: connection
 as_connection: Databricks
 label: security_connection
 db_type: databricks
-database: mm_sample
-schema: sales_insight
+database: se_demo_helper
+schema: security
 override: true
 

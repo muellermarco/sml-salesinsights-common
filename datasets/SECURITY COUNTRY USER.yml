@@ -7,4 +7,4 @@ columns:
   - name: user_id
     data_type: string
 connection_id: security_connection
-table: security_country_user
+table: sales_insights_security_country_user
