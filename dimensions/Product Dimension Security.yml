@@ -3,7 +3,7 @@ object_type: dimension
 label: Product Dimension
 description: Product Line, Category, and Name
 hierarchies:
-  - unique_name: Product Dimension hierarchy
+  - unique_name: Product Hierarchy
     label: Product Hierarchy
     folder: Product Attributes
     levels:
