@@ -19,7 +19,7 @@ hierarchies:
             name_column: productsubcategorykey
       - unique_name: Product Name
         metrics:
-          - unique_name: List Price
+          - unique_name: List Price Sec
             label: List Price
             calculation_method: sum
             column: listprice
