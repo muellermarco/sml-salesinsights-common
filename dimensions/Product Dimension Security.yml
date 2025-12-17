@@ -1,0 +1,64 @@
+unique_name: Product Dimension Security
+object_type: dimension
+label: Product Dimension
+description: Product Line, Category, and Name
+hierarchies:
+  - unique_name: Product Dimension hierarchy
+    label: Product Hierarchy
+    folder: Product Attributes
+    levels:
+      - unique_name: Product Line
+      - unique_name: Product Category
+        secondary_attributes:
+          - unique_name: d_productsubcategoryId
+            label: Product Subcategory ID
+            description: ID of the product category
+            dataset: dimproduct
+            key_columns:
+              - productsubcategorykey
+            name_column: productsubcategorykey
+      - unique_name: Product Name
+        metrics_commented:
+          - unique_name: List Price
+            label: List Price
+            calculation_method: sum
+            column: listprice
+            dataset: dimproduct
+            folder: Product Metrics
+            type: metrical-attribute
+level_attributes:
+  - unique_name: Product Category
+    label: Product Category
+    description: Product Sub Category
+    dataset: dimproduct
+    key_columns:
+      - productline
+      - productsubcategorykey
+    name_column: productsubcategoryname
+  - unique_name: Product Line
+    label: Product Line
+    description: Product Line
+    dataset: dimproduct
+    key_columns:
+      - productline
+    name_column: productline
+  - unique_name: Product Name
+    label: Product Name
+    description: Full Product Name
+    dataset: dimproduct
+    is_unique_key: true
+    key_columns:
+      - productkey
+    name_column: englishproductname
+relationships:
+  - unique_name: dimproduct_productline_to_SECURITY_PRODUCTLINE_GROUP
+    from:
+      dataset: dimproduct
+      hierarchy: Product Hierarchy
+      join_columns:
+        - productline
+      level: Product Category
+    to:
+      row_security: SECURITY_PRODUCTLINE_GROUP
+    type: embedded
+type: standard

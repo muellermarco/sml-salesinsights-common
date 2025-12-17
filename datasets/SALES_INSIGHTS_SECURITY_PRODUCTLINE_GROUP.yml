@@ -1,0 +1,10 @@
+unique_name: SALES_INSIGHTS_SECURITY_PRODUCTLINE_GROUP
+object_type: dataset
+label: SALES_INSIGHTS_SECURITY_PRODUCTLINE_GROUP
+columns:
+  - name: PRODUCTLINE_ID
+    data_type: string
+  - name: GROUP_ID
+    data_type: string
+connection_id: security_connection
+table: SALES_INSIGHTS_SECURITY_PRODUCTLINE_GROUP

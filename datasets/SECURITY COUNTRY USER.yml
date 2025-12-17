@@ -1,10 +1,10 @@
-unique_name: SECURITY_COUNTRY_USER
+unique_name: DS_SECURITY_COUNTRY_USER
 object_type: dataset
-label: SECURITY_COUNTRY_USER
+label: DS_SECURITY_COUNTRY_USER
 columns:
-  - name: country
-    data_type: string
   - name: USER_ID
     data_type: string
+  - name: COUNTRY_ID
+    data_type: string
 connection_id: security_connection
-table: SECURITY_COUNTRY_USER
+table: SALES_INSIGHTS_SECURITY_COUNTRY_USER

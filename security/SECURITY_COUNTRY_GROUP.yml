@@ -1,0 +1,10 @@
+unique_name: SECURITY_COUNTRY_GROUP
+object_type: row_security
+label: SECURITY_COUNTRY_GROUP
+dataset: SALES_INSIGHTS_SECURITY_COUNTRY_GROUP
+filter_key_column: COUNTRY_ID
+id_type: group
+ids_column: GROUP_ID
+scope: all
+secure_totals: false
+use_filter_key: false
