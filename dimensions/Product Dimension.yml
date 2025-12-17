@@ -1,62 +1,53 @@
 unique_name: Product Dimension
-label: Product Dimension
 object_type: dimension
-description: "Product Line, Category, and Name"
-
+label: Product Dimension
+description: Product Line, Category, and Name
 hierarchies:
-
-  - unique_name: Product Dimension hierarchy
+  - unique_name: Product Hierarchy
     label: Product Hierarchy
     folder: Product Attributes
-
     levels:
       - unique_name: Product Line
       - unique_name: Product Category
-
         secondary_attributes:
           - unique_name: d_productsubcategoryId
             label: Product Subcategory ID
             description: ID of the product category
-            is_hidden: false
             dataset: dimproduct
-            name_column: productsubcategorykey
             key_columns:
               - productsubcategorykey
+            name_column: productsubcategorykey
       - unique_name: Product Name
-
         metrics_commented:
           - unique_name: List Price
             label: List Price
             calculation_method: sum
+            column: listprice
+            dataset: dimproduct
             folder: Product Metrics
             type: metrical-attribute
-            dataset: dimproduct
-            column: listprice
-
 level_attributes:
-
   - unique_name: Product Category
     label: Product Category
     description: Product Sub Category
     dataset: dimproduct
-    name_column: productsubcategoryname
     key_columns:
       - productline
       - productsubcategorykey
-
+    name_column: productsubcategoryname
   - unique_name: Product Line
     label: Product Line
     description: Product Line
     dataset: dimproduct
-    name_column: productline
     key_columns:
       - productline
-
+    name_column: productline
   - unique_name: Product Name
     label: Product Name
     description: Full Product Name
-    is_unique_key: true
     dataset: dimproduct
-    name_column: englishproductname
+    is_unique_key: true
     key_columns:
       - productkey
+    name_column: englishproductname
+type: standard
