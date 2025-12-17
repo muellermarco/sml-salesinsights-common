@@ -1,4 +1,4 @@
-unique_name: Product Dimension
+unique_name: Product Dimension Security
 object_type: dimension
 label: Product Dimension
 description: Product Line, Category, and Name
@@ -50,5 +50,15 @@ level_attributes:
     key_columns:
       - productkey
     name_column: englishproductname
-relationships: []
+relationships:
+  - unique_name: dimproduct_productline_to_Security Productline Group
+    from:
+      dataset: dimproduct
+      hierarchy: Product Hierarchy
+      join_columns:
+        - productline
+      level: Product Category
+    to:
+      row_security: Security Productline Group
+    type: embedded
 type: standard
