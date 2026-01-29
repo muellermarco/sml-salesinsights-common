@@ -1,0 +1,6 @@
+version: 1
+unique_name: MM/Sales Insights Common
+object_type: catalog
+label: MM/Sales Insights Common
+aggressive_agg_promotion: false
+build_speculative_aggs: true

@@ -17,7 +17,7 @@ level_attributes:
 
   - unique_name: Size
     label: Size
-    dataset: factinternetsales
+    dataset: factinternetinventory
     name_column: size
     key_columns:
       - size

@@ -17,7 +17,7 @@ level_attributes:
 
   - unique_name: Weight
     label: Weight
-    dataset: factinternetsales
+    dataset: factinternetinventory
     name_column: weight
     key_columns:
       - weight

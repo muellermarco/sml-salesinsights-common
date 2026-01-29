@@ -13,7 +13,7 @@ level_attributes:
   - unique_name: Color
     label: Color
     description: Product Color
-    dataset: factinternetsales
+    dataset: factinternetinventory
     key_columns:
       - color
     name_column: color

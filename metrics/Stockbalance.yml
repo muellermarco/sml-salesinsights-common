@@ -1,0 +1,7 @@
+unique_name: Stockbalance
+object_type: metric
+label: Stockbalance
+calculation_method: sum
+column: stockbalance
+dataset: factinternetinventory
+unrelated_dimensions_handling: repeat

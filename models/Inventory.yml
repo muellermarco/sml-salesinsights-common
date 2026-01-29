@@ -7,64 +7,65 @@ dimensions:
   - Style Dimension
   - Weight Dimension
 metrics:
-  - unique_name: Stock Balance
+  - unique_name: Stockbalance
+    folder: Stock
 relationships:
-  - unique_name: factinternetsales_Date_Dimension_Order
+  - unique_name: factinternetinventory_Date_Dimension_Order
     from:
-      dataset: factinternetsales
+      dataset: factinternetinventory
       join_columns:
         - orderdatekey
     role_play: Order {0}
     to:
       dimension: Date Dimension
       level: customday
-  - unique_name: factinternetsales_Date_Dimension_Ship
+  - unique_name: factinternetinventory_Date_Dimension_Ship
     from:
-      dataset: factinternetsales
+      dataset: factinternetinventory
       join_columns:
         - shipdatekey
     role_play: Ship {0}
     to:
       dimension: Date Dimension
       level: customday
-  - unique_name: factinternetsales_Product_Dimension
+  - unique_name: factinternetinventory_Product_Dimension
     from:
-      dataset: factinternetsales
+      dataset: factinternetinventory
       join_columns:
         - productkey
     to:
       dimension: Product Dimension
       level: Product Name
-  - unique_name: factinternetsales_Date_Dimension_Order_1
+  - unique_name: factinternetinventory_Date_Dimension_Order_1
     from:
-      dataset: factinternetsales
+      dataset: factinternetinventory
       join_columns:
         - orderdatekey
     role_play: Order {0}
     to:
       dimension: Date Dimension
       level: rpt_Day
-  - unique_name: factinternetsales_Date_Dimension_Ship_1
+  - unique_name: factinternetinventory_Date_Dimension_Ship_1
     from:
-      dataset: factinternetsales
+      dataset: factinternetinventory
       join_columns:
         - shipdatekey
     role_play: Ship {0}
     to:
       dimension: Date Dimension
       level: rpt_Day
-  - unique_name: factinternetsales_Date_Dimension_Order_2
+  - unique_name: factinternetinventory_Date_Dimension_Order_2
     from:
-      dataset: factinternetsales
+      dataset: factinternetinventory
       join_columns:
         - orderdatekey
     role_play: Order {0}
     to:
       dimension: Date Dimension
       level: DayMonth
-  - unique_name: factinternetsales_Date_Dimension_Ship_2
+  - unique_name: factinternetinventory_Date_Dimension_Ship_2
     from:
-      dataset: factinternetsales
+      dataset: factinternetinventory
       join_columns:
         - shipdatekey
     role_play: Ship {0}

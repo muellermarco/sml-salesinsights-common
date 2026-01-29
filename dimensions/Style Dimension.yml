@@ -18,7 +18,7 @@ level_attributes:
   - unique_name: Style
     label: Style
     description: Product Style
-    dataset: factinternetsales
+    dataset: factinternetinventory
     name_column: style
     key_columns:
       - style

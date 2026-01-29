@@ -1,6 +1,6 @@
-unique_name: factinternetsales
+unique_name: factinternetinventory
 object_type: dataset
-label: factinternetsales
+label: factinternetinventory
 columns:
   - name: Calculated Tax
     data_type: double
@@ -49,6 +49,9 @@ columns:
   - name: weight
     data_type: decimal
     parent_column: product_info
+  - name: stockbalance
+    data_type: decimal(15,3)
+    sql: orderquantity * 1.035
 connection_id: common_connection
 model_properties:
   - create_hinted_aggregate: false
