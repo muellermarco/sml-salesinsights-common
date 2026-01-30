@@ -10,10 +10,11 @@ hierarchies:
         metrics:
           - unique_name: Country Count
             label: Country Count
-            calculation_method: count distinct
+            calculation_method: sum
             folder: Stock
             dataset: dim_geo_country
-            column: country      
+            column: CountryCounter
+            is_hidden: true
       - unique_name: State
       - unique_name: City
         secondary_attributes:

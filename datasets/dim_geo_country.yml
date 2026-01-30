@@ -1,12 +1,14 @@
 unique_name: dim_geo_country
 object_type: dataset
 label: dim_geo_country
-connection_id: common_connection
-table: DIM_GEO_COUNTRY
-project_properties:
-  allow_aggregates: true
-  aggregate_locality: managed
-
 columns:
   - name: country
     data_type: string
+  - name: CountryCounter
+    data_type: decimal(1,0)
+    sql: '1'
+connection_id: common_connection
+project_properties:
+  aggregate_locality: managed
+  allow_aggregates: true
+table: DIM_GEO_COUNTRY
