@@ -7,6 +7,13 @@ hierarchies:
     folder: Customer Attributes
     levels:
       - unique_name: CountryCity
+        metrics:
+          - unique_name: Country Count
+            label: Country Count
+            calculation_method: count distinct
+            folder: Stock
+            dataset: dim_geo_country
+            column: country      
       - unique_name: State
       - unique_name: City
         secondary_attributes:
