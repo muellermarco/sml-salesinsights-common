@@ -5,32 +5,37 @@ columns:
   - name: Calculated Tax
     data_type: double
     sql: salesamount*0.085
+    dialects:
+      - dialect: DatabricksSQL
+        sql: salesamount*0.085
+      - dialect: Snowflake
+        sql: '"salesamount"* 0.085'    
   - name: currencykey
-    data_type: int
+    data_type: decimal(38,0)
   - name: customerkey
-    data_type: int
+    data_type: decimal(38,0)
   - name: orderdate
     data_type: string
   - name: orderdatekey
-    data_type: int
+    data_type: decimal(38,0)
   - name: orderquantity
-    data_type: int
+    data_type: decimal(38,0)
   - name: productkey
-    data_type: int
+    data_type: decimal(38,0)
   - name: sales_reasons
     data_type: string
-  - name: salesamount
-    data_type: float
   - name: salesorderlinenumber
-    data_type: int
+    data_type: decimal(38,0)
+  - name: salesamount
+    data_type: double    
   - name: salesordernumber
     data_type: string
   - name: shipdatekey
-    data_type: int
+    data_type: decimal(38,0)
   - name: taxamt
-    data_type: float
+    data_type: double
   - name: unitprice
-    data_type: float
+    data_type: double
   - name: product_info
     map:
       field_terminator: ','
@@ -51,12 +56,11 @@ columns:
     parent_column: product_info
   - name: stockbalance
     data_type: decimal(15,3)
+    dialects:
+      - dialect: DatabricksSQL
+        sql: orderquantity * 1.035
+      - dialect: Snowflake
+        sql: '("orderquantity"* 1.035)::INT'
     sql: orderquantity * 1.035
 connection_id: common_connection
-model_properties:
-  - create_hinted_aggregate: false
-    model: Internet Sales
-project_properties:
-  aggregate_locality: managed
-  allow_aggregates: true
 table: factinternetsales
