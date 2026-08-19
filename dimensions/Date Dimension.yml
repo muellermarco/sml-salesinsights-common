@@ -18,10 +18,9 @@ hierarchies:
       - unique_name: customyear
       - unique_name: customquarter
         parallel_periods:
-          - key_columns:
-              - name: rpt_quarter_lykey
-                data_type: datetime
-            period: TimeYears
+          - level: customyear
+            key_columns:
+              - rpt_quarter_lykey
         secondary_attributes:
           - unique_name: d_Custom_Quarter_Of_Year
             label: Custom Quarter Of Year
@@ -33,10 +32,9 @@ hierarchies:
             sort_column: rpt_quarter_of_year_name
       - unique_name: custommonth
         parallel_periods:
-          - key_columns:
-              - name: rpt_month_lykey
-                data_type: datetime
-            period: TimeYears
+          - level: customyear
+            key_columns:
+              - rpt_month_lykey
         secondary_attributes:
           - unique_name: d_Custom_Month_Name
             label: Custom Month Name
@@ -64,10 +62,9 @@ hierarchies:
             sort_column: rpt_month_of_year_name
       - unique_name: customweek
         parallel_periods:
-          - key_columns:
-              - name: rpt_week_lykey
-                data_type: datetime
-            period: TimeYears
+          - level: customyear
+            key_columns:
+              - rpt_week_lykey
         secondary_attributes:
           - unique_name: d_Custom_Week_Of_Month
             label: Custom Week Of Month
@@ -87,10 +84,9 @@ hierarchies:
             sort_column: rpt_week_of_year_name
       - unique_name: customday
         parallel_periods:
-          - key_columns:
-              - name: rpt_day_lykey
-                data_type: datetime
-            period: TimeYears
+          - level: customyear
+            key_columns:
+              - rpt_day_lykey
         secondary_attributes:
           - unique_name: d_Custom_Day_Of_Month
             label: Custom Day Of Month
