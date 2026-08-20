@@ -40,8 +40,8 @@ level_attributes:
     description: Product Line
     dataset: dimproduct
     key_columns:
-      - productline
-    name_column: productline
+      - productline_trimmed
+    name_column: productline_trimmed
   - unique_name: Product Name
     label: Product Name
     description: Full Product Name

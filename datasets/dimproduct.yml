@@ -16,6 +16,9 @@ columns:
     data_type: long
   - name: productline
     data_type: string
+  - name: productline_trimmed
+    data_type: string
+    sql: 'TRIM("productline")'
   - name: productsubcategorykey
     data_type: long
   - name: productsubcategoryname
