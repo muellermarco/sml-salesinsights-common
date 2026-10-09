@@ -1,6 +1,7 @@
 unique_name: Inventory RLS
 object_type: model
 label: Inventory
+description: "Inventory model with 1 metrics in folders Stock; fact datasets: factinternetinventory; dimensions: Date Dimension, Product Dimension Security."
 dimensions:
   - Color Dimension
   - Size Dimension

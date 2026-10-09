@@ -1,5 +1,6 @@
 unique_name: Weight Dimension
 label: Weight
+description: "Weight dimension with hierarchies Weight; levels sourced from factinternetinventory."
 object_type: dimension
 is_degenerate: true
 
@@ -7,6 +8,7 @@ hierarchies:
 
   - unique_name: Weight hierarchy
     label: Weight
+    description: "Weight hierarchy of the Weight dimension: Weight."
     folder: Product Attributes
     filter_empty: yes
 
@@ -17,6 +19,7 @@ level_attributes:
 
   - unique_name: Weight
     label: Weight
+    description: "Weight level of the Weight dimension in the Weight hierarchy, from factinternetinventory.weight."
     dataset: factinternetinventory
     name_column: weight
     key_columns:

@@ -1,5 +1,6 @@
 unique_name: dimgender
 label: dimgender
+description: "dimgender: dimension table DIMGENDER on connection common_connection (2 columns)."
 object_type: dataset
 connection_id: common_connection
 table: DIMGENDER
