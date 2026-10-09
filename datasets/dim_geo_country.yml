@@ -1,6 +1,7 @@
 unique_name: dim_geo_country
 object_type: dataset
 label: dim_geo_country
+description: "dim_geo_country: dimension table dim_geo_country on connection common_connection (1 columns)."
 connection_id: common_connection
 table: dim_geo_country
 project_properties:
