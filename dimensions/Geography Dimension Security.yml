@@ -1,9 +1,11 @@
 unique_name: Geography Dimension Security
 object_type: dimension
 label: Geography Dimension
+description: "Geography Dimension dimension with hierarchies Geography City, Geography Zip; levels sourced from dim_geo_city, dim_geo_country, dim_geo_postalcode, dim_geo_state."
 hierarchies:
   - unique_name: Geography City
     label: Geography City
+    description: "Geography City hierarchy of the Geography Dimension dimension: Country › State › City › GeoKey."
     folder: Customer Attributes
     levels:
       - unique_name: CountryCity
@@ -12,6 +14,7 @@ hierarchies:
         secondary_attributes:
           - unique_name: d_city
             label: City
+            description: "City: attribute of the City level in the Geography Dimension dimension, from dim_geo_city.city."
             dataset: dim_geo_city
             key_columns:
               - city
@@ -20,6 +23,7 @@ hierarchies:
         is_hidden: true
   - unique_name: Geography Zip
     label: Geography Zip
+    description: "Geography Zip hierarchy of the Geography Dimension dimension: Country › Zip Code › GeoKey."
     folder: Customer Attributes
     levels:
       - unique_name: CountryZip
@@ -27,6 +31,7 @@ hierarchies:
         secondary_attributes:
           - unique_name: d_postalcode
             label: Postal Code
+            description: "Postal Code: attribute of the Zip Code level in the Geography Dimension dimension, from dim_geo_postalcode.postalcode."
             dataset: dim_geo_postalcode
             key_columns:
               - postalcode
@@ -36,6 +41,7 @@ hierarchies:
 level_attributes:
   - unique_name: City
     label: City
+    description: "City level of the Geography Dimension dimension in the Geography City hierarchy, from dim_geo_city.citystatekey (key: statekey, city)."
     dataset: dim_geo_city
     key_columns:
       - statekey
@@ -43,6 +49,7 @@ level_attributes:
     name_column: citystatekey
   - unique_name: CountryCity
     label: Country
+    description: "Country level of the Geography Dimension dimension in the Geography City hierarchy, from dim_geo_country.country; unique key."
     dataset: dim_geo_country
     is_unique_key: true
     key_columns:
@@ -50,12 +57,14 @@ level_attributes:
     name_column: country
   - unique_name: CountryZip
     label: Country
+    description: "Country level of the Geography Dimension dimension in the Geography Zip hierarchy, from dim_geo_country.country."
     dataset: dim_geo_country
     key_columns:
       - country
     name_column: country
   - unique_name: GeoKeyCity
     label: GeoKey
+    description: "GeoKey level of the Geography Dimension dimension in the Geography City hierarchy, from dim_geo_city.geographykey; unique key."
     dataset: dim_geo_city
     is_hidden: true
     is_unique_key: true
@@ -64,6 +73,7 @@ level_attributes:
     name_column: geographykey
   - unique_name: GeoKeyZip
     label: GeoKey
+    description: "GeoKey level of the Geography Dimension dimension in the Geography Zip hierarchy, from dim_geo_postalcode.geographykey; unique key."
     dataset: dim_geo_postalcode
     is_hidden: true
     is_unique_key: true
@@ -72,6 +82,7 @@ level_attributes:
     name_column: geographykey
   - unique_name: State
     label: State
+    description: "State level of the Geography Dimension dimension in the Geography City hierarchy, from dim_geo_state.state (key: statekey); unique key."
     dataset: dim_geo_state
     is_unique_key: true
     key_columns:
@@ -79,6 +90,7 @@ level_attributes:
     name_column: state
   - unique_name: Zip Code
     label: Zip Code
+    description: "Zip Code level of the Geography Dimension dimension in the Geography Zip hierarchy, from dim_geo_postalcode.countrypostalcode (key: country, postalcode); unique key."
     dataset: dim_geo_postalcode
     is_unique_key: true
     key_columns:

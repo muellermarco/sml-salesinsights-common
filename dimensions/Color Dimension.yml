@@ -5,6 +5,7 @@ description: 'Product Color '
 hierarchies:
   - unique_name: Color hierarchy
     label: Color
+    description: "Color hierarchy of the Color Dimension dimension: Color."
     folder: Product Attributes
     levels:
       - unique_name: Color
