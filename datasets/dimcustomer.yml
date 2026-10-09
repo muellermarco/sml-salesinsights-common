@@ -1,5 +1,6 @@
 unique_name: dimcustomer
 label: dimcustomer
+description: "dimcustomer: dimension table dimcustomer on connection common_connection (8 columns)."
 object_type: dataset
 connection_id: common_connection
 table: dimcustomer

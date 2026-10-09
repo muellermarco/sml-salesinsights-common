@@ -1,5 +1,6 @@
 unique_name: dim_geo_postalcode
 label: dim_geo_postalcode
+description: "dim_geo_postalcode: dimension table dim_geo_postalcode on connection common_connection (4 columns)."
 object_type: dataset
 connection_id: common_connection
 table: dim_geo_postalcode
