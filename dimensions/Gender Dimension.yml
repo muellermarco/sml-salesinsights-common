@@ -1,11 +1,13 @@
 unique_name: Gender Dimension
 label: Gender Dimension
+description: "Gender Dimension dimension with hierarchies Gender Hierarchy; levels sourced from dimgender."
 object_type: dimension
 
 hierarchies:
 
   - unique_name: Gender Hierarchy
     label: Gender Hierarchy
+    description: "Gender Hierarchy hierarchy of the Gender Dimension dimension: Gender."
     folder: Customer Attributes
 
     levels:
@@ -15,6 +17,7 @@ level_attributes:
 
   - unique_name: Gender
     label: Gender
+    description: "Gender level of the Gender Dimension dimension in the Gender Hierarchy hierarchy, from dimgender.gendername (key: genderkey); unique key."
     is_unique_key: true
     dataset: dimgender
     name_column: gendername
