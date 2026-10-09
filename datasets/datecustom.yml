@@ -1,6 +1,7 @@
 unique_name: datecustom
 object_type: dataset
 label: datecustom
+description: "datecustom: table datecustom on connection common_connection (99 columns)."
 columns:
   - name: pk_date
     data_type: datetime

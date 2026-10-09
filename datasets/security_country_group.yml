@@ -1,6 +1,7 @@
 unique_name: security_country_group
 object_type: dataset
 label: security_country_group
+description: "security_country_group: table sales_insights_security_country_group on connection security_connection (2 columns)."
 columns:
   - name: country_id
     data_type: string

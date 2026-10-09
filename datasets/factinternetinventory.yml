@@ -1,6 +1,7 @@
 unique_name: factinternetinventory
 object_type: dataset
 label: factinternetinventory
+description: "factinternetinventory: fact table factinternetsales on connection common_connection (20 columns)."
 columns:
   - name: Calculated Tax
     data_type: double

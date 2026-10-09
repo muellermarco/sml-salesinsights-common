@@ -1,6 +1,7 @@
 unique_name: sales_insights_security_productline_group
 object_type: dataset
 label: sales_insights_security_productline_group
+description: "sales_insights_security_productline_group: table sales_insights_security_productline_group on connection security_connection (2 columns)."
 columns:
   - name: productline_id
     data_type: string
