@@ -1,5 +1,6 @@
 unique_name: dimproduct
 label: dimproduct
+description: "dimproduct: dimension table DIMPRODUCT on connection common_connection (7 columns)."
 object_type: dataset
 connection_id: common_connection
 table: DIMPRODUCT

@@ -1,6 +1,7 @@
 unique_name: dim_geo_city
 object_type: dataset
 label: dim_geo_city
+description: "dim_geo_city: dimension table DIM_GEO_CITY on connection common_connection (4 columns)."
 connection_id: common_connection
 table: DIM_GEO_CITY
 project_properties:

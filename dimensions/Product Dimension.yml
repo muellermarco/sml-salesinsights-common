@@ -7,6 +7,7 @@ hierarchies:
 
   - unique_name: Product Dimension hierarchy
     label: Product Hierarchy
+    description: "Product Hierarchy hierarchy of the Product Dimension dimension: Product Line › Product Category › Product Name."
     folder: Product Attributes
 
     levels:

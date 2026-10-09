@@ -1,5 +1,6 @@
 unique_name: dim_geo_state
 label: dim_geo_state
+description: "dim_geo_state: dimension table DIM_GEO_STATE on connection common_connection (3 columns)."
 object_type: dataset
 connection_id: common_connection
 table: DIM_GEO_STATE
