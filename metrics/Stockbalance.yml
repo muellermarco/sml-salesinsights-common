@@ -1,6 +1,7 @@
 unique_name: Stockbalance
 object_type: metric
 label: Stockbalance
+description: "Sum of factinternetinventory.stockbalance; repeated across unrelated dimensions."
 calculation_method: sum
 column: stockbalance
 dataset: factinternetinventory

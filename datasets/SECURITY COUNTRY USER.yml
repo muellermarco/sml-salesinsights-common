@@ -1,6 +1,7 @@
 unique_name: DS_SECURITY_COUNTRY_USER
 object_type: dataset
 label: DS_SECURITY_COUNTRY_USER
+description: "DS_SECURITY_COUNTRY_USER: table SALES_INSIGHTS_SECURITY_COUNTRY_USER on connection security_connection (2 columns)."
 columns:
   - name: USER_ID
     data_type: string

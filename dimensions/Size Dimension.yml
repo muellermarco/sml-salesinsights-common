@@ -8,6 +8,7 @@ hierarchies:
 
   - unique_name: Size hierarchy
     label: Size
+    description: "Size hierarchy of the Size Dimension dimension: Size."
     folder: Product Attributes
 
     levels:
@@ -17,6 +18,7 @@ level_attributes:
 
   - unique_name: Size
     label: Size
+    description: "Size level of the Size Dimension dimension in the Size hierarchy, from factinternetinventory.size."
     dataset: factinternetinventory
     name_column: size
     key_columns:

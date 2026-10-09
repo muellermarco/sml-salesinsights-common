@@ -5,24 +5,28 @@ description: Customer Key
 hierarchies:
   - unique_name: Customer Hierarchy
     label: Customer Hierarchy
+    description: "Customer Hierarchy hierarchy of the Customer Dimension dimension: Customer Name."
     folder: Customer Attributes
     levels:
       - unique_name: Customer Name
         secondary_attributes:
           - unique_name: d_firstname
             label: First Name
+            description: "First Name: attribute of the Customer Name level in the Customer Dimension dimension, from dimcustomer.firstname."
             dataset: dimcustomer
             key_columns:
               - firstname
             name_column: firstname
           - unique_name: d_lastname
             label: Last Name
+            description: "Last Name: attribute of the Customer Name level in the Customer Dimension dimension, from dimcustomer.lastname."
             dataset: dimcustomer
             key_columns:
               - lastname
             name_column: lastname
           - unique_name: Occupation
             label: Occupation
+            description: "Occupation: attribute of the Customer Name level in the Customer Dimension dimension, from dimcustomer.occupation."
             dataset: dimcustomer
             folder: Customer Attributes
             key_columns:

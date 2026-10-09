@@ -8,6 +8,7 @@ hierarchies:
 
   - unique_name: Style hierarchy
     label: Style
+    description: "Style hierarchy of the Style Dimension dimension: Style."
     folder: Product Attributes
 
     levels:
